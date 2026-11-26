@@ -1,0 +1,199 @@
+/* ===== GENERAL ===== */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  color: #222222;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+header {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+  padding: 25px 10px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 40px;
+  font-family: Georgia, serif;
+}
+
+/* ===== NAVIGATION ===== */
+nav {
+  background-color: rgb(216, 210, 206);
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav a {
+  display: block;
+  padding: 12px 22px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: rgb(83, 64, 65);
+}
+
+/* ===== SECTIONS ===== */
+section {
+  background-color: white;
+  width: 80%;
+  max-width: 1000px;
+  margin: 25px auto;
+  padding: 20px;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+section h2 {
+  color: darkblue;
+  font-family: Georgia, serif;
+  border-bottom: 3px solid orange;
+  padding-bottom: 5px;
+}
+
+section h3 {
+  color: rgb(0, 0, 0);
+}
+
+/* ===== HOME ===== */
+#home {
+  text-align: center;
+  background-color: lightyellow;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 50%;
+}
+
+.button {
+  display: inline-block;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: rgb(158, 151, 152);
+}
+
+/* ===== PORTFOLIO ===== */
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.box {
+  flex: 1 1 250px;
+  background-color: #f2f2f2;
+  border: 2px solid gray;
+  padding: 10px;
+}
+
+.box img {
+  width: 100%;
+  border: 2px solid black;
+}
+
+/* ===== GALLERY ===== */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gallery img {
+  flex: 1 1 200px;
+  width: 200px;
+  border: 3px solid darkblue;
+}
+
+/* ===== CONTACT ===== */
+input, textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px;
+  margin: 5px 0 10px 0;
+  border: 2px solid gray;
+  font-family: Arial, sans-serif;
+}
+
+button {
+  background-color: green;
+  color: white;
+  padding: 10px 25px;
+  border: 2px solid black;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkgreen;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: darkblue;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 25px;
+}
+
+footer p {
+  margin: 5px;
+}
+
+footer a {
+  color: yellow;
+}
+
+/* ===== RESPONSIVE (for phones and small screens) ===== */
+@media (max-width: 700px) {
+  header h1 {
+    font-size: 28px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav a {
+    text-align: center;
+    border-bottom: 1px solid black;
+  }
+
+  section {
+    width: 94%;
+    padding: 12px;
+  }
+}
